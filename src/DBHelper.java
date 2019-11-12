@@ -30,11 +30,18 @@ public class DBHelper {
 
     }
 
-    public void executeUpdate(String sqlStatement) throws SQLException {
+    void executeUpdate(String sqlStatement) throws SQLException {
 
         stmt = conn.prepareStatement(sqlStatement);
         stmt.executeUpdate();
 
+    }
+    
+    void insertData(int n) throws SQLException {
+        for (int i = 1; i <= n; i++) {
+            stmt = conn.prepareStatement(SQLStatements.getInsertIntoBranches(n, i));
+            stmt.executeUpdate();
+        }
     }
 
     public void createNewConnection(String databaseURL, String username, String password) throws SQLException {
