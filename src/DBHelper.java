@@ -30,6 +30,13 @@ public class DBHelper {
 
     }
 
+    public void executeUpdate(String sqlStatement) throws SQLException {
+
+        stmt = conn.prepareStatement(sqlStatement);
+        stmt.executeUpdate();
+
+    }
+
     public void createNewConnection(String databaseURL, String username, String password) throws SQLException {
 
         this.conn = getConnection(databaseURL,username,password);
