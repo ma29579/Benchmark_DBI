@@ -17,7 +17,7 @@ public class DBHelper {
 
     }
 
-    public void createSchema(){
+    public void createSchema() {
 
     }
 
@@ -36,20 +36,26 @@ public class DBHelper {
         stmt.executeUpdate();
 
     }
-    
+
     void insertData(int n) throws SQLException {
         for (int i = 1; i <= n; i++) {
             stmt = conn.prepareStatement(SQLStatements.getInsertIntoBranches(n, i));
+            stmt.executeUpdate();
+        }
+
+        for (int i = 1; i <= n * 100000; i++) {
+            stmt = conn.prepareStatement(SQLStatements.getInsertIntoAccounts(n, i));
             stmt.executeUpdate();
         }
     }
 
     public void createNewConnection(String databaseURL, String username, String password) throws SQLException {
 
-        this.conn = getConnection(databaseURL,username,password);
+        this.conn = getConnection(databaseURL, username, password);
     }
 
     public void closeConnection() throws SQLException {
         this.conn.close();
     }
+
 }
