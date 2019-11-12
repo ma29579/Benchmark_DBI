@@ -44,8 +44,11 @@ class SQLStatements {
     private static final String insertIntoBranches = "INSERT INTO %schemaName%.branches (branchid, branchname, balance, address)" +
             "VALUES (%branchid%, \'" + dummy20 + "\', 0, \'" + dummy72 + "\');";
 
-    static String insertIntoAccounts = "INSERT INTO %schemaName%.accounts (accid,name,balance,branchid,address)" +
+    private static final String insertIntoAccounts = "INSERT INTO %schemaName%.accounts (accid, name, balance, branchid, address)" +
             "VALUES (%accid%, \'" + dummy20 + "\', 0, %branchid%, \'" + dummy68 + "\');";
+
+    private static final String insertIntoTellers = "INSERT INTO %schemaName%.tellers (tellerid, tellername, balance, branchid, address)" +
+            "VALUES (%tellerid%, \'" + dummy20 + "\', 0, %branchid%, \'" + dummy68 + "\');";
 
     static String getCreateSchema(int n) {
         String schemaName = "tps" + n;
@@ -63,6 +66,14 @@ class SQLStatements {
         String schemaName = "tps" + n;
         String insertStmt = insertIntoAccounts.replace("%schemaName%", schemaName);
         insertStmt = insertStmt.replace("%accid%", Integer.toString(i));
+        insertStmt = insertStmt.replace("%branchid%", Integer.toString(ThreadLocalRandom.current().nextInt(1, n + 1)));
+        return insertStmt;
+    }
+
+    static String getInsertIntoTellers(int n, int i) {
+        String schemaName = "tps" + n;
+        String insertStmt = insertIntoTellers.replace("%schemaName%", schemaName);
+        insertStmt = insertStmt.replace("%tellerid%", Integer.toString(i));
         insertStmt = insertStmt.replace("%branchid%", Integer.toString(ThreadLocalRandom.current().nextInt(1, n + 1)));
         return insertStmt;
     }

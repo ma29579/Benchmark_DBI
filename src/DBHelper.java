@@ -43,8 +43,13 @@ public class DBHelper {
             stmt.executeUpdate();
         }
 
-        for (int i = 1; i <= n * 100000; i++) {
+        for (int i = 1; i <= n * 100; i++) {
             stmt = conn.prepareStatement(SQLStatements.getInsertIntoAccounts(n, i));
+            stmt.executeUpdate();
+        }
+
+        for (int i = 1; i <= n * 10; i++) {
+            stmt = conn.prepareStatement(SQLStatements.getInsertIntoTellers(n, i));
             stmt.executeUpdate();
         }
     }
