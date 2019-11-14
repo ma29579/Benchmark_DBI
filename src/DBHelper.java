@@ -53,7 +53,6 @@ public class DBHelper {
             stmt = conn.prepareStatement(SQLStatements.getInsertIntoTellers(n, i));
             stmt.executeUpdate();
         }
-
         conn.commit();
     }
 
