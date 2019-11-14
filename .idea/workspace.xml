@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikumsabgabe/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SQLStatements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SQLStatements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,19 +23,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1050" />
-  </component>
   <component name="ProjectId" id="1TVeVBEYJOW9an3dd5k9SyFH7Zk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573554657618" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573558145087" />
     <property name="last_opened_file_path" value="C:/temp/postgresql-42.2.8.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -80,6 +76,13 @@
       <workItem from="1573547818189" duration="779000" />
       <workItem from="1573552617386" duration="1705000" />
       <workItem from="1573555434316" duration="1669000" />
+      <workItem from="1573558515500" duration="191000" />
+      <workItem from="1573558856319" duration="21000" />
+      <workItem from="1573559073839" duration="12000" />
+      <workItem from="1573559147121" duration="8000" />
+      <workItem from="1573559253282" duration="12000" />
+      <workItem from="1573578680021" duration="236000" />
+      <workItem from="1573731448047" duration="289000" />
     </task>
     <task id="LOCAL-00001" summary="added workspace.xml to gitignore">
       <created>1573552669090</created>

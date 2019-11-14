@@ -14,6 +14,7 @@ public class DBHelper {
     DBHelper(String databaseURL, String username, String password) throws SQLException {
 
         conn = getConnection(databaseURL, username, password);
+        conn.setAutoCommit(false);
 
     }
 
@@ -52,6 +53,8 @@ public class DBHelper {
             stmt = conn.prepareStatement(SQLStatements.getInsertIntoTellers(n, i));
             stmt.executeUpdate();
         }
+
+        conn.commit();
     }
 
     public void createNewConnection(String databaseURL, String username, String password) throws SQLException {
