@@ -2,6 +2,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import org.apache.commons.lang3.time.StopWatch;
 
 import static java.sql.DriverManager.getConnection;
 
@@ -39,6 +40,8 @@ public class DBHelper {
     }
 
     void insertData(int n) throws SQLException {
+        StopWatch stopWatch = new StopWatch();
+        stopWatch.start();
         for (int i = 1; i <= n; i++) {
             stmt = conn.prepareStatement(SQLStatements.getInsertIntoBranches(n, i));
             stmt.executeUpdate();
@@ -54,6 +57,9 @@ public class DBHelper {
             stmt.executeUpdate();
         }
         conn.commit();
+        stopWatch.stop();
+        long time = stopWatch.getTime();
+        System.out.println("time = " + time);
     }
 
     public void createNewConnection(String databaseURL, String username, String password) throws SQLException {

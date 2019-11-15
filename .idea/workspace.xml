@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_lang3_3_9.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Praktikumsabgabe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Praktikumsabgabe.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/DBHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikumsabgabe/DBHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBHelper.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,6 +43,12 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/commons-lang3-3.9" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -84,7 +92,8 @@
       <workItem from="1573558859815" duration="112000" />
       <workItem from="1573559533796" duration="29000" />
       <workItem from="1573559747559" duration="23000" />
-      <workItem from="1573731591570" duration="300000" />
+      <workItem from="1573731591570" duration="2470000" />
+      <workItem from="1573804631618" duration="1312000" />
     </task>
     <task id="LOCAL-00001" summary="added workspace.xml to gitignore">
       <created>1573552669090</created>
@@ -100,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573557970898</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="set auto commit = false">
+      <created>1573731926495</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573731926495</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,14 +152,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added workspace.xml to gitignore" />
     <MESSAGE value="insert into tellers" />
-    <option name="LAST_COMMIT_MESSAGE" value="insert into tellers" />
+    <MESSAGE value="set auto commit = false" />
+    <option name="LAST_COMMIT_MESSAGE" value="set auto commit = false" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/DBHelper.java</url>
-          <line>51</line>
+          <line>54</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
