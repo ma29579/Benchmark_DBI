@@ -19,9 +19,6 @@ public class DBHelper {
 
     }
 
-    public void createSchema() {
-
-    }
 
     public ResultSet executeQuery(String sqlStatement) throws SQLException {
 
@@ -31,6 +28,7 @@ public class DBHelper {
         return results;
 
     }
+
 
     void executeUpdate(String sqlStatement) throws SQLException {
 
@@ -47,7 +45,7 @@ public class DBHelper {
             stmt.executeUpdate();
         }
 
-        for (int i = 1; i <= n * 100; i++) {
+        for (int i = 1; i <= n * 100000; i++) {
             stmt = conn.prepareStatement(SQLStatements.getInsertIntoAccounts(n, i));
             stmt.executeUpdate();
         }
