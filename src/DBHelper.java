@@ -36,6 +36,7 @@ public class DBHelper {
 
         stmt = conn.prepareStatement(sqlStatement);
         stmt.executeUpdate();
+        stmt.close();
 
     }
 
@@ -57,6 +58,7 @@ public class DBHelper {
             stmt = conn.prepareStatement(insertIntoBranches);
             stmt.setInt(1, i);
             stmt.executeUpdate();
+            stmt.close();
         }
 
         for (int i = 1; i <= n * 100000; i++) {
@@ -64,6 +66,7 @@ public class DBHelper {
             stmt.setInt(1, i);
             stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
             stmt.executeUpdate();
+            stmt.close();
         }
 
         for (int i = 1; i <= n * 10; i++) {
@@ -71,6 +74,7 @@ public class DBHelper {
             stmt.setInt(1, i);
             stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
             stmt.executeUpdate();
+            stmt.close();
         }
         conn.commit();
         stopWatch.stop();
