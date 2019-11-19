@@ -18,8 +18,9 @@ public class Main {
 
         try {
 
-            DBHelper reader = new DBHelper("jdbc:postgresql://localhost:5432/DBI", "postgres", "postgres");
+//            DBHelper reader = new DBHelper("jdbc:postgresql://localhost:5432/DBI", "postgres", "postgres");
 //            DBHelper reader = new DBHelper("jdbc:postgresql://localhost:5433/postgres", "jen", "");
+            DBHelper reader = new DBHelper("jdbc:postgresql://localhost:5432/DBI", "postgres", "dbidbi");
             reader.executeUpdate(test);
             reader.insertData(n);
 
