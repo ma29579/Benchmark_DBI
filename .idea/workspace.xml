@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Praktikumsabgabe:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Praktikumsabgabe_jar/Praktikumsabgabe.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Praktikumsabgabe_jar/Praktikumsabgabe.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikumsabgabe/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +102,7 @@
       <workItem from="1573559747559" duration="23000" />
       <workItem from="1573731591570" duration="2470000" />
       <workItem from="1573804631618" duration="1518000" />
-      <workItem from="1574153144488" duration="545000" />
+      <workItem from="1574153144488" duration="2618000" />
     </task>
     <task id="LOCAL-00001" summary="added workspace.xml to gitignore">
       <created>1573552669090</created>
@@ -131,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573806194565</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="created .jar artifact">
+      <created>1574154190917</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574154190917</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +185,7 @@
     <MESSAGE value="set auto commit = false" />
     <MESSAGE value="added apache stopwatch" />
     <MESSAGE value="fix encoding for RELEASE-NOTES.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix encoding for RELEASE-NOTES.txt" />
+    <MESSAGE value="created .jar artifact" />
+    <option name="LAST_COMMIT_MESSAGE" value="created .jar artifact" />
   </component>
 </project>
