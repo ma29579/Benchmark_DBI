@@ -54,29 +54,45 @@ public class DBHelper {
         String insertIntoTellers = "INSERT INTO " + schemaName + ".tellers (tellerid, tellername, balance, branchid, address)" +
                 "VALUES (?, \'abcdefghijklmnopqrst\', 0, ?, \'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVQXYZ0123456789abcdef\');";
 
-        for (int i = 1; i <= n; i++) {
-            stmt = conn.prepareStatement(insertIntoBranches);
+        stmt = conn.prepareStatement(insertIntoBranches);
+        stmt.setInt(1, 1);
+        stmt.addBatch();
+
+        for (int i = 2; i <= n; i++) {
             stmt.setInt(1, i);
-            stmt.executeUpdate();
-            stmt.close();
+            stmt.addBatch();
         }
 
-        for (int i = 1; i <= n * 100000; i++) {
-            stmt = conn.prepareStatement(insertIntoAccounts);
-            stmt.setInt(1, i);
-            stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
-            stmt.executeUpdate();
-            stmt.close();
-        }
-
-        for (int i = 1; i <= n * 10; i++) {
-            stmt = conn.prepareStatement(insertIntoTellers);
-            stmt.setInt(1, i);
-            stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
-            stmt.executeUpdate();
-            stmt.close();
-        }
+        stmt.executeBatch();
         conn.commit();
+
+        stmt = conn.prepareStatement(insertIntoAccounts);
+        stmt.setInt(1, 1);
+        stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
+        stmt.addBatch();
+
+        for (int i = 2; i <= n * 100000; i++) {
+            stmt.setInt(1, i);
+            stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
+            stmt.addBatch();
+        }
+
+        stmt.executeBatch();
+        conn.commit();
+
+        stmt = conn.prepareStatement(insertIntoTellers);
+        stmt.setInt(1, 1);
+        stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
+
+        for (int i = 2; i <= n * 10; i++) {
+            stmt.setInt(1, i);
+            stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
+            stmt.addBatch();
+        }
+
+        stmt.executeBatch();
+        conn.commit();
+
         stopWatch.stop();
         long time = stopWatch.getTime();
         System.out.println("time = " + time);

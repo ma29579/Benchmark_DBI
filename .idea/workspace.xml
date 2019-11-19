@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Praktikumsabgabe:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/DBHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikumsabgabe/DBHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBHelper.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,7 +95,8 @@
       <workItem from="1573731448047" duration="289000" />
       <workItem from="1573994454514" duration="172000" />
       <workItem from="1574152375063" duration="2400000" />
-      <workItem from="1574160702412" duration="249000" />
+      <workItem from="1574160702412" duration="3176000" />
+      <workItem from="1574177078042" duration="2688000" />
     </task>
     <task id="LOCAL-00001" summary="added workspace.xml to gitignore">
       <created>1573552669090</created>
@@ -126,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574153961057</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Close opened statement-connections">
+      <created>1574161213616</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574161213616</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +178,7 @@
     <MESSAGE value="Commit jdbc-driver" />
     <MESSAGE value="1000000" />
     <MESSAGE value="DBreader for VM" />
-    <option name="LAST_COMMIT_MESSAGE" value="DBreader for VM" />
+    <MESSAGE value="Close opened statement-connections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Close opened statement-connections" />
   </component>
 </project>
