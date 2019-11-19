@@ -6,10 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +111,7 @@
       <workItem from="1573559747559" duration="23000" />
       <workItem from="1573731591570" duration="2470000" />
       <workItem from="1573804631618" duration="1518000" />
-      <workItem from="1574153144488" duration="5917000" />
+      <workItem from="1574153144488" duration="6134000" />
     </task>
     <task id="LOCAL-00001" summary="added workspace.xml to gitignore">
       <created>1573552669090</created>
@@ -193,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574159421323</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="choose conn on startup">
+      <created>1574159949684</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1574159949684</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +240,7 @@
     <MESSAGE value="moved insert statements to DBHelper class" />
     <MESSAGE value="prepared statements" />
     <MESSAGE value="conn" />
-    <option name="LAST_COMMIT_MESSAGE" value="conn" />
+    <MESSAGE value="choose conn on startup" />
+    <option name="LAST_COMMIT_MESSAGE" value="choose conn on startup" />
   </component>
 </project>
