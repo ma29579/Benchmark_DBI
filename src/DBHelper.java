@@ -46,37 +46,30 @@ public class DBHelper {
 
         String schemaName = "tps" + n;
 
-        String dummy20 = "abcdefghijklmnopqrst";
-        String dummy68 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVQXYZ0123456789abcdef";
-        String dummy72 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVQXYZ0123456789abcdefghij";
-
-        String insertIntoBranches = "INSERT INTO %schemaName%.branches (branchid, branchname, balance, address)" +
-                "VALUES (%branchid%, \'" + dummy20 + "\', 0, \'" + dummy72 + "\');";
-        String insertIntoAccounts = "INSERT INTO %schemaName%.accounts (accid, name, balance, branchid, address)" +
-                "VALUES (%accid%, \'" + dummy20 + "\', 0, %branchid%, \'" + dummy68 + "\');";
-        String insertIntoTellers = "INSERT INTO %schemaName%.tellers (tellerid, tellername, balance, branchid, address)" +
-                "VALUES (%tellerid%, \'" + dummy20 + "\', 0, %branchid%, \'" + dummy68 + "\');";
+        String insertIntoBranches = "INSERT INTO " + schemaName + ".branches (branchid, branchname, balance, address)" +
+                "VALUES (?, \'abcdefghijklmnopqrst\', 0, \'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVQXYZ0123456789abcdefghij\');";
+        String insertIntoAccounts = "INSERT INTO " + schemaName + ".accounts (accid, name, balance, branchid, address)" +
+                "VALUES (?, \'abcdefghijklmnopqrst\', 0, ?, \'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVQXYZ0123456789abcdef\');";
+        String insertIntoTellers = "INSERT INTO " + schemaName + ".tellers (tellerid, tellername, balance, branchid, address)" +
+                "VALUES (?, \'abcdefghijklmnopqrst\', 0, ?, \'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVQXYZ0123456789abcdef\');";
 
         for (int i = 1; i <= n; i++) {
-            String insertStmt = insertIntoBranches.replace("%schemaName%", schemaName);
-            insertStmt = insertStmt.replace("%branchid%", Integer.toString(i));
-            stmt = conn.prepareStatement(insertStmt);
+            stmt = conn.prepareStatement(insertIntoBranches);
+            stmt.setInt(1, i);
             stmt.executeUpdate();
         }
 
         for (int i = 1; i <= n * 100000; i++) {
-            String insertStmt = insertIntoAccounts.replace("%schemaName%", schemaName);
-            insertStmt = insertStmt.replace("%accid%", Integer.toString(i));
-            insertStmt = insertStmt.replace("%branchid%", Integer.toString(ThreadLocalRandom.current().nextInt(1, n + 1)));
-            stmt = conn.prepareStatement(insertStmt);
+            stmt = conn.prepareStatement(insertIntoAccounts);
+            stmt.setInt(1, i);
+            stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
             stmt.executeUpdate();
         }
 
         for (int i = 1; i <= n * 10; i++) {
-            String insertStmt = insertIntoTellers.replace("%schemaName%", schemaName);
-            insertStmt = insertStmt.replace("%tellerid%", Integer.toString(i));
-            insertStmt = insertStmt.replace("%branchid%", Integer.toString(ThreadLocalRandom.current().nextInt(1, n + 1)));
-            stmt = conn.prepareStatement(insertStmt);
+            stmt = conn.prepareStatement(insertIntoTellers);
+            stmt.setInt(1, i);
+            stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
             stmt.executeUpdate();
         }
         conn.commit();

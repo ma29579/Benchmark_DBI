@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Build2");
+        System.out.println("Build3");
 
         int n;
 

@@ -13,7 +13,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikumsabgabe/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SQLStatements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SQLStatements.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +104,7 @@
       <workItem from="1573559747559" duration="23000" />
       <workItem from="1573731591570" duration="2470000" />
       <workItem from="1573804631618" duration="1518000" />
-      <workItem from="1574153144488" duration="3741000" />
+      <workItem from="1574153144488" duration="5051000" />
     </task>
     <task id="LOCAL-00001" summary="added workspace.xml to gitignore">
       <created>1573552669090</created>
@@ -156,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574156549452</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="moved insert statements to DBHelper class">
+      <created>1574157744456</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1574157744456</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +202,7 @@
     <MESSAGE value="added apache stopwatch" />
     <MESSAGE value="fix encoding for RELEASE-NOTES.txt" />
     <MESSAGE value="created .jar artifact" />
-    <option name="LAST_COMMIT_MESSAGE" value="created .jar artifact" />
+    <MESSAGE value="moved insert statements to DBHelper class" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved insert statements to DBHelper class" />
   </component>
 </project>
