@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Praktikumsabgabe:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Praktikumsabgabe_jar</output-path>
+    <root id="archive" name="Praktikumsabgabe.jar">
+      <element id="module-output" name="Praktikumsabgabe" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/commons-lang3-3.9/commons-lang3-3.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/postgresql-42.2.8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
