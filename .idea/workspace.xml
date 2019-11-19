@@ -6,14 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Praktikumsabgabe_jar/Praktikumsabgabe.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Praktikumsabgabe_jar/Praktikumsabgabe.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/DBHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikumsabgabe/DBHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikumsabgabe/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +97,7 @@
       <workItem from="1573559747559" duration="23000" />
       <workItem from="1573731591570" duration="2470000" />
       <workItem from="1573804631618" duration="1518000" />
-      <workItem from="1574153144488" duration="5051000" />
+      <workItem from="1574153144488" duration="5356000" />
     </task>
     <task id="LOCAL-00001" summary="added workspace.xml to gitignore">
       <created>1573552669090</created>
@@ -162,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574157744456</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="prepared statements">
+      <created>1574159225212</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1574159225212</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +203,7 @@
     <MESSAGE value="fix encoding for RELEASE-NOTES.txt" />
     <MESSAGE value="created .jar artifact" />
     <MESSAGE value="moved insert statements to DBHelper class" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved insert statements to DBHelper class" />
+    <MESSAGE value="prepared statements" />
+    <option name="LAST_COMMIT_MESSAGE" value="prepared statements" />
   </component>
 </project>
