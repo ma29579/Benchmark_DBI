@@ -1,4 +1,3 @@
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
@@ -7,22 +6,39 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Build3");
+        System.out.println("Eingabe Connection (1: Max; 2: Joshua; 3: VM)");
+        Scanner input = new Scanner(System.in);
+        int connection = input.nextInt();
 
         int n;
 
         System.out.println("Eingabe TPS-Anzahl:");
 
-        Scanner input = new Scanner(System.in);
         n = input.nextInt();
 
         String createSchema = SQLStatements.getCreateSchema(n);
+        String databaseURL = "";
+        String username = "";
+        String password = "";
+
+
+        if (connection == 1) {
+            databaseURL = "jdbc:postgresql://localhost:5432/DBI";
+            username = "postgres";
+            password = "postgres";
+        } else if (connection == 2) {
+            databaseURL = "jdbc:postgresql://localhost:5433/postgres";
+            username = "jen";
+            password = "";
+        } else {
+            databaseURL = "jdbc:postgresql://localhost:5432/DBI";
+            username = "postgres";
+            password = "dbidbi";
+        }
 
         try {
 
-//            DBHelper reader = new DBHelper("jdbc:postgresql://localhost:5432/DBI", "postgres", "postgres");
-//            DBHelper reader = new DBHelper("jdbc:postgresql://localhost:5433/postgres", "jen", "");
-            DBHelper reader = new DBHelper("jdbc:postgresql://localhost:5432/DBI", "postgres", "dbidbi");
+            DBHelper reader = new DBHelper(databaseURL, username, password);
             reader.executeUpdate(createSchema);
             reader.insertData(n);
 
