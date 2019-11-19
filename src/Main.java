@@ -7,6 +7,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+        System.out.println("Build2");
+
         int n;
 
         System.out.println("Eingabe TPS-Anzahl:");
@@ -14,14 +16,14 @@ public class Main {
         Scanner input = new Scanner(System.in);
         n = input.nextInt();
 
-        String test = SQLStatements.getCreateSchema(n);
+        String createSchema = SQLStatements.getCreateSchema(n);
 
         try {
 
 //            DBHelper reader = new DBHelper("jdbc:postgresql://localhost:5432/DBI", "postgres", "postgres");
             DBHelper reader = new DBHelper("jdbc:postgresql://localhost:5433/postgres", "jen", "");
 //            DBHelper reader = new DBHelper("jdbc:postgresql://localhost:5432/DBI", "postgres", "dbidbi");
-            reader.executeUpdate(test);
+            reader.executeUpdate(createSchema);
             reader.insertData(n);
 
 
