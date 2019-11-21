@@ -40,6 +40,48 @@ public class DBHelper {
 
     }
 
+    void createBenchmarkDatabase(int n) {
+
+        String schemaName = "tps" + n;
+
+        String createSchema = "DROP SCHEMA IF EXISTS " + schemaName + " CASCADE;" +
+                "CREATE SCHEMA IF NOT EXISTS %schemaName%;" +
+                "create table %schemaName%.branches" +
+                "( branchid int not null," +
+                "branchname char(20) not null," +
+                "balance int not null," +
+                "address char(72) not null," +
+                "primary key (branchid) );" +
+                "create table %schemaName%.accounts" +
+                "( accid int not null," +
+                "name char(20) not null," +
+                "balance int not null," +
+                "branchid int not null," +
+                "address char(68) not null," +
+                "primary key (accid)," +
+                "foreign key (branchid) references %schemaName%.branches );" +
+                "create table %schemaName%.tellers" +
+                "( tellerid int not null," +
+                "tellername char(20) not null," +
+                "balance int not null," +
+                "branchid int not null," +
+                "address char(68) not null," +
+                "primary key (tellerid)," +
+                "foreign key (branchid) references %schemaName%.branches );" +
+                "create table %schemaName%.history" +
+                "( accid int not null," +
+                "tellerid int not null," +
+                "delta int not null," +
+                "branchid int not null," +
+                "accbalance int not null," +
+                "cmmnt char(30) not null," +
+                "foreign key (accid) references %schemaName%.accounts," +
+                "foreign key (tellerid) references %schemaName%.tellers," +
+                "foreign key (branchid) references %schemaName%.branches );";
+
+
+    }
+
     void insertData(int n) throws SQLException {
 
         StopWatch stopWatch = new StopWatch();
@@ -55,36 +97,27 @@ public class DBHelper {
                 "VALUES (?, \'abcdefghijklmnopqrst\', 0, ?, \'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVQXYZ0123456789abcdef\');";
 
         stmt = conn.prepareStatement(insertIntoBranches);
-        stmt.setInt(1, 1);
-        stmt.addBatch();
 
-        for (int i = 2; i <= n; i++) {
+        for (int i = 1; i <= n; i++) {
             stmt.setInt(1, i);
             stmt.addBatch();
         }
 
         stmt.executeBatch();
-        conn.commit();
 
         stmt = conn.prepareStatement(insertIntoAccounts);
-        stmt.setInt(1, 1);
-        stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
-        stmt.addBatch();
 
-        for (int i = 2; i <= n * 100000; i++) {
+        for (int i = 1; i <= n * 100000; i++) {
             stmt.setInt(1, i);
             stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
             stmt.addBatch();
         }
 
         stmt.executeBatch();
-        conn.commit();
 
         stmt = conn.prepareStatement(insertIntoTellers);
-        stmt.setInt(1, 1);
-        stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
 
-        for (int i = 2; i <= n * 10; i++) {
+        for (int i = 1; i <= n * 10; i++) {
             stmt.setInt(1, i);
             stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
             stmt.addBatch();
