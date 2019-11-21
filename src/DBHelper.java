@@ -55,36 +55,27 @@ public class DBHelper {
                 "VALUES (?, \'abcdefghijklmnopqrst\', 0, ?, \'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVQXYZ0123456789abcdef\');";
 
         stmt = conn.prepareStatement(insertIntoBranches);
-        stmt.setInt(1, 1);
-        stmt.addBatch();
 
-        for (int i = 2; i <= n; i++) {
+        for (int i = 1; i <= n; i++) {
             stmt.setInt(1, i);
             stmt.addBatch();
         }
 
         stmt.executeBatch();
-        conn.commit();
 
         stmt = conn.prepareStatement(insertIntoAccounts);
-        stmt.setInt(1, 1);
-        stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
-        stmt.addBatch();
 
-        for (int i = 2; i <= n * 100000; i++) {
+        for (int i = 1; i <= n * 100000; i++) {
             stmt.setInt(1, i);
             stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
             stmt.addBatch();
         }
 
         stmt.executeBatch();
-        conn.commit();
 
         stmt = conn.prepareStatement(insertIntoTellers);
-        stmt.setInt(1, 1);
-        stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
 
-        for (int i = 2; i <= n * 10; i++) {
+        for (int i = 1; i <= n * 10; i++) {
             stmt.setInt(1, i);
             stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
             stmt.addBatch();
