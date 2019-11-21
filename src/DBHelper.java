@@ -40,45 +40,48 @@ public class DBHelper {
 
     }
 
-    void createBenchmarkDatabase(int n) {
+    void createBenchmarkDatabase(int n) throws SQLException {
 
         String schemaName = "tps" + n;
 
         String createSchema = "DROP SCHEMA IF EXISTS " + schemaName + " CASCADE;" +
-                "CREATE SCHEMA IF NOT EXISTS %schemaName%;" +
-                "create table %schemaName%.branches" +
+                "CREATE SCHEMA IF NOT EXISTS  " + schemaName + " ;" +
+                "create table  " + schemaName + " .branches" +
                 "( branchid int not null," +
                 "branchname char(20) not null," +
                 "balance int not null," +
                 "address char(72) not null," +
                 "primary key (branchid) );" +
-                "create table %schemaName%.accounts" +
+                "create table  " + schemaName + " .accounts" +
                 "( accid int not null," +
                 "name char(20) not null," +
                 "balance int not null," +
                 "branchid int not null," +
                 "address char(68) not null," +
                 "primary key (accid)," +
-                "foreign key (branchid) references %schemaName%.branches );" +
-                "create table %schemaName%.tellers" +
+                "foreign key (branchid) references  " + schemaName + " .branches );" +
+                "create table  " + schemaName + " .tellers" +
                 "( tellerid int not null," +
                 "tellername char(20) not null," +
                 "balance int not null," +
                 "branchid int not null," +
                 "address char(68) not null," +
                 "primary key (tellerid)," +
-                "foreign key (branchid) references %schemaName%.branches );" +
-                "create table %schemaName%.history" +
+                "foreign key (branchid) references  " + schemaName + " .branches );" +
+                "create table  " + schemaName + " .history" +
                 "( accid int not null," +
                 "tellerid int not null," +
                 "delta int not null," +
                 "branchid int not null," +
                 "accbalance int not null," +
                 "cmmnt char(30) not null," +
-                "foreign key (accid) references %schemaName%.accounts," +
-                "foreign key (tellerid) references %schemaName%.tellers," +
-                "foreign key (branchid) references %schemaName%.branches );";
+                "foreign key (accid) references  " + schemaName + " .accounts," +
+                "foreign key (tellerid) references  " + schemaName + " .tellers," +
+                "foreign key (branchid) references  " + schemaName + " .branches );";
 
+        stmt = conn.prepareStatement(createSchema);
+        stmt.executeUpdate();
+        stmt.close();
 
     }
 

@@ -6,7 +6,17 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="" />
+    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Praktikumsabgabe_jar/Praktikumsabgabe.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Praktikumsabgabe_jar/Praktikumsabgabe.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/DBHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikumsabgabe/DBHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikumsabgabe/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/SQLStatements.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SQLStatements.java" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +67,7 @@
     <property name="last_opened_file_path" value="C:/temp/postgresql-42.2.8.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -111,7 +121,9 @@
       <workItem from="1573559747559" duration="23000" />
       <workItem from="1573731591570" duration="2470000" />
       <workItem from="1573804631618" duration="1518000" />
-      <workItem from="1574153144488" duration="6134000" />
+      <workItem from="1574153144488" duration="6298000" />
+      <workItem from="1574238088118" duration="232000" />
+      <workItem from="1574328259757" duration="960000" />
     </task>
     <task id="LOCAL-00001" summary="added workspace.xml to gitignore">
       <created>1573552669090</created>
@@ -197,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574159949684</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="workspace">
+      <created>1574161479991</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1574161479991</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +260,7 @@
     <MESSAGE value="prepared statements" />
     <MESSAGE value="conn" />
     <MESSAGE value="choose conn on startup" />
-    <option name="LAST_COMMIT_MESSAGE" value="choose conn on startup" />
+    <MESSAGE value="workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace" />
   </component>
 </project>

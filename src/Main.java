@@ -16,7 +16,6 @@ public class Main {
 
         n = input.nextInt();
 
-        String createSchema = SQLStatements.getCreateSchema(n);
         String databaseURL = "";
         String username = "";
         String password = "";
@@ -39,7 +38,7 @@ public class Main {
         try {
 
             DBHelper reader = new DBHelper(databaseURL, username, password);
-            reader.executeUpdate(createSchema);
+            reader.createBenchmarkDatabase(n);
             reader.insertData(n);
 
 
