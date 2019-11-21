@@ -7,12 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/DBHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikumsabgabe/DBHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikumsabgabe/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/SQLStatements.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikumsabgabe/SQLStatements.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBHelper.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -105,7 +101,7 @@
       <workItem from="1574258709586" duration="1380000" />
       <workItem from="1574316151517" duration="993000" />
       <workItem from="1574321597415" duration="127000" />
-      <workItem from="1574326555123" duration="1115000" />
+      <workItem from="1574326555123" duration="1901000" />
     </task>
     <task id="LOCAL-00001" summary="added workspace.xml to gitignore">
       <created>1573552669090</created>
@@ -149,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574161213616</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Schleifen-Anpassung">
+      <created>1574327936147</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1574327936147</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +191,7 @@
     <MESSAGE value="1000000" />
     <MESSAGE value="DBreader for VM" />
     <MESSAGE value="Close opened statement-connections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Close opened statement-connections" />
+    <MESSAGE value="Schleifen-Anpassung" />
+    <option name="LAST_COMMIT_MESSAGE" value="Schleifen-Anpassung" />
   </component>
 </project>
