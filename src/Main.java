@@ -22,15 +22,15 @@ public class Main {
 
 
         if (connection == 1) {
-            databaseURL = "jdbc:postgresql://localhost:5432/DBI";
+            databaseURL = "jdbc:postgresql://localhost:5432/DBI?rewriteBatchedStatements=true&useServerPrepStmts=false";
             username = "postgres";
             password = "postgres";
         } else if (connection == 2) {
-            databaseURL = "jdbc:postgresql://localhost:5433/postgres";
+            databaseURL = "jdbc:postgresql://localhost:5433/postgres?rewriteBatchedStatements=true&useServerPrepStmts=false";
             username = "jen";
             password = "";
         } else {
-            databaseURL = "jdbc:postgresql://localhost:5432/DBI";
+            databaseURL = "jdbc:postgresql://localhost:5432/DBI?rewriteBatchedStatements=true&useServerPrepStmts=false";
             username = "postgres";
             password = "dbidbi";
         }

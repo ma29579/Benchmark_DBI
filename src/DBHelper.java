@@ -12,31 +12,11 @@ public class DBHelper {
 
     private Connection conn;
     private PreparedStatement stmt;
-    private ResultSet results;
 
     DBHelper(String databaseURL, String username, String password) throws SQLException {
 
         conn = getConnection(databaseURL, username, password);
         conn.setAutoCommit(false);
-
-    }
-
-
-    public ResultSet executeQuery(String sqlStatement) throws SQLException {
-
-        stmt = conn.prepareStatement(sqlStatement);
-        results = stmt.executeQuery();
-
-        return results;
-
-    }
-
-
-    void executeUpdate(String sqlStatement) throws SQLException {
-
-        stmt = conn.prepareStatement(sqlStatement);
-        stmt.executeUpdate();
-        stmt.close();
 
     }
 
@@ -107,6 +87,7 @@ public class DBHelper {
         }
 
         stmt.executeBatch();
+        stmt.close();
 
         stmt = conn.prepareStatement(insertIntoAccounts);
 
@@ -117,6 +98,7 @@ public class DBHelper {
         }
 
         stmt.executeBatch();
+        stmt.close();
 
         stmt = conn.prepareStatement(insertIntoTellers);
 
@@ -127,16 +109,12 @@ public class DBHelper {
         }
 
         stmt.executeBatch();
+        stmt.close();
         conn.commit();
 
         stopWatch.stop();
         long time = stopWatch.getTime();
         System.out.println("time = " + time);
-    }
-
-    public void createNewConnection(String databaseURL, String username, String password) throws SQLException {
-
-        this.conn = getConnection(databaseURL, username, password);
     }
 
     public void closeConnection() throws SQLException {
