@@ -6,16 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/pgjdbc_ng_0_8_3_all.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Praktikumsabgabe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Praktikumsabgabe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/DBHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikumsabgabe/DBHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikumsabgabe/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +100,7 @@
       <workItem from="1574321597415" duration="127000" />
       <workItem from="1574326555123" duration="1939000" />
       <workItem from="1574340311595" duration="282000" />
-      <workItem from="1574356924736" duration="2195000" />
+      <workItem from="1574356924736" duration="2253000" />
     </task>
     <task id="LOCAL-00001" summary="added workspace.xml to gitignore">
       <created>1573552669090</created>
@@ -167,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574328497520</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Change Connection-String WP">
+      <created>1574359179170</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1574359179170</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +206,7 @@
     <MESSAGE value="Close opened statement-connections" />
     <MESSAGE value="Schleifen-Anpassung" />
     <MESSAGE value="Create Method WP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Method WP" />
+    <MESSAGE value="Change Connection-String WP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change Connection-String WP" />
   </component>
 </project>
