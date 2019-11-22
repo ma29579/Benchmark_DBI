@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class Main {
 
-
     public static void main(String[] args) {
 
         System.out.println("Eingabe Connection (1: Max; 2: Joshua; 3: VM)");
@@ -36,11 +35,13 @@ public class Main {
         }
 
         try {
+            // Instanziierung des DBWriters
+            DBWriter writer = new DBWriter(databaseURL, username, password);
 
-            DBHelper reader = new DBHelper(databaseURL, username, password);
-            reader.createBenchmarkDatabase(n);
-            reader.insertData(n);
-
+            // Initialisierung der Benchmark-Datenbank
+            writer.createBenchmarkDatabase(n);
+            writer.insertData(n);
+            writer.closeConnection();
 
         } catch (SQLException e) {
             System.out.println("Fehler bei der Datenbankverbindung!");
