@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Eingabe Connection (1: Max; 2: Joshua; 3: VM)");
+        System.out.println("Eingabe Connection (1: Max; 2: Joshua; 3: VM; 4: Remote)");
         Scanner input = new Scanner(System.in);
         int connection = input.nextInt();
 
@@ -28,8 +28,12 @@ public class Main {
             databaseURL = "jdbc:postgresql://localhost:5433/postgres?rewriteBatchedStatements=true&useServerPrepStmts=false";
             username = "jen";
             password = "";
-        } else {
+        } else if (connection == 3){
             databaseURL = "jdbc:postgresql://localhost:5432/DBI?rewriteBatchedStatements=true&useServerPrepStmts=false";
+            username = "postgres";
+            password = "dbidbi";
+        } else {
+            databaseURL = "jdbc:postgresql://192.168.122.38:5432/DBI?rewriteBatchedStatements=true&useServerPrepStmts=false";
             username = "postgres";
             password = "dbidbi";
         }
