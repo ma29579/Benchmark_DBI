@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DBWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBWriter.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +118,7 @@
       <workItem from="1574238088118" duration="232000" />
       <workItem from="1574328259757" duration="1200000" />
       <workItem from="1574407437697" duration="92000" />
-      <workItem from="1574412480021" duration="3784000" />
+      <workItem from="1574412480021" duration="6312000" />
     </task>
     <task id="LOCAL-00001" summary="added workspace.xml to gitignore">
       <created>1573552669090</created>
@@ -232,7 +232,21 @@
       <option name="project" value="LOCAL" />
       <updated>1574757610807</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Remote-Connection Zugang">
+      <created>1574761291799</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1574761291799</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Remote-Connection Zugang">
+      <created>1574761369128</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1574761369128</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +293,7 @@
     <MESSAGE value="workspace" />
     <MESSAGE value="- Create schema in DBHelper&#10;- Delete SQLStatements.java" />
     <MESSAGE value="Kommentare" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kommentare" />
+    <MESSAGE value="Remote-Connection Zugang" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remote-Connection Zugang" />
   </component>
 </project>
