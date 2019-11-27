@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SQLStatements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SQLStatements.java" afterDir="false" />
+    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="1. Versuch">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Praktikumsabgabe_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,14 +33,15 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573554657618" />
     <property name="last_opened_file_path" value="C:/temp/postgresql-42.2.8.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
