@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Praktikumsabgabe:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="1. Versuch" />
+    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="1. Versuch die 2.">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Praktikumsabgabe_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Praktikumsabgabe_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Praktikumsabgabe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Praktikumsabgabe.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Praktikumsabgabe_jar/Praktikumsabgabe.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +52,7 @@
     <property name="last_opened_file_path" value="C:/temp/postgresql-42.2.8.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -95,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573552669090</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1. Versuch die 2.">
+      <created>1574840664878</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574840664878</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +149,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added workspace.xml to gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="added workspace.xml to gitignore" />
+    <MESSAGE value="1. Versuch die 2." />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Versuch die 2." />
   </component>
 </project>
