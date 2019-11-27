@@ -111,7 +111,7 @@ class DBWriter {
             stmt.setInt(1, i);
             stmt.setInt(2, ThreadLocalRandom.current().nextInt(1, n + 1));
             stmt.addBatch();
-            if (i % 100000 == 0) {
+            if (i % 25000 == 0) {
                 stmt.executeBatch();
             }
         }

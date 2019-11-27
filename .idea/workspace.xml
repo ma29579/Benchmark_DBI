@@ -6,8 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="">
+    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="Remote-Connection Zugang">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/DBWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikumsabgabe/DBWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikumsabgabe/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DBWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBWriter.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -119,6 +122,8 @@
       <workItem from="1574328259757" duration="1200000" />
       <workItem from="1574407437697" duration="92000" />
       <workItem from="1574412480021" duration="6312000" />
+      <workItem from="1574767304806" duration="802000" />
+      <workItem from="1574786244808" duration="426000" />
     </task>
     <task id="LOCAL-00001" summary="added workspace.xml to gitignore">
       <created>1573552669090</created>
