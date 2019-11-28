@@ -6,12 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="Remote-Connection Zugang">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/DBWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikumsabgabe/DBWriter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Praktikumsabgabe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Praktikumsabgabe/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DBWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBWriter.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,9 +123,7 @@
       <workItem from="1574238088118" duration="232000" />
       <workItem from="1574328259757" duration="1200000" />
       <workItem from="1574407437697" duration="92000" />
-      <workItem from="1574412480021" duration="6312000" />
-      <workItem from="1574767304806" duration="802000" />
-      <workItem from="1574786244808" duration="426000" />
+      <workItem from="1574412480021" duration="6829000" />
     </task>
     <task id="LOCAL-00001" summary="added workspace.xml to gitignore">
       <created>1573552669090</created>
@@ -257,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574761369128</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="execute batch every 100,000 steps">
+      <created>1574765031813</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1574765031813</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,6 +306,7 @@
     <MESSAGE value="- Create schema in DBHelper&#10;- Delete SQLStatements.java" />
     <MESSAGE value="Kommentare" />
     <MESSAGE value="Remote-Connection Zugang" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remote-Connection Zugang" />
+    <MESSAGE value="execute batch every 100,000 steps" />
+    <option name="LAST_COMMIT_MESSAGE" value="execute batch every 100,000 steps" />
   </component>
 </project>
