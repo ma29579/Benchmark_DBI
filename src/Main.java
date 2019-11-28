@@ -21,19 +21,19 @@ public class Main {
 
 
         if (connection == 1) {
-            databaseURL = "jdbc:postgresql://localhost:5432/DBI?rewriteBatchedStatements=true&useServerPrepStmts=false";
+            databaseURL = "jdbc:postgresql://localhost:5432/DBI?rewriteBatchedStatements=true";
             username = "postgres";
             password = "postgres";
         } else if (connection == 2) {
-            databaseURL = "jdbc:postgresql://localhost:5433/postgres?rewriteBatchedStatements=true&useServerPrepStmts=false";
+            databaseURL = "jdbc:postgresql://localhost:5433/postgres?rewriteBatchedStatements=true";
             username = "jen";
             password = "";
         } else if (connection == 3){
-            databaseURL = "jdbc:postgresql://localhost:5432/DBI?rewriteBatchedStatements=true&useServerPrepStmts=false";
+            databaseURL = "jdbc:postgresql://localhost:5432/DBI?rewriteBatchedStatements=true";
             username = "postgres";
             password = "dbidbi";
         } else {
-            databaseURL = "jdbc:postgresql://192.168.122.38:5432/DBI?rewriteBatchedStatements=true&useServerPrepStmts=false";
+            databaseURL = "jdbc:postgresql://192.168.122.38:5432/DBI?rewriteBatchedStatements=true";
             username = "postgres";
             password = "dbidbi";
         }
