@@ -7,9 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +48,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1TVeVBEYJOW9an3dd5k9SyFH7Zk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -57,6 +59,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -74,18 +77,6 @@
       <recent name="$PROJECT_DIR$/src/commons-lang3-3.9" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -100,6 +91,18 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -124,6 +127,10 @@
       <workItem from="1574328259757" duration="1200000" />
       <workItem from="1574407437697" duration="92000" />
       <workItem from="1574412480021" duration="6829000" />
+      <workItem from="1575105442873" duration="299000" />
+      <workItem from="1575114572130" duration="2219000" />
+      <workItem from="1575137279724" duration="14000" />
+      <workItem from="1575138322675" duration="628000" />
     </task>
     <task id="LOCAL-00001" summary="added workspace.xml to gitignore">
       <created>1573552669090</created>
@@ -308,5 +315,27 @@
     <MESSAGE value="Remote-Connection Zugang" />
     <MESSAGE value="execute batch every 100,000 steps" />
     <option name="LAST_COMMIT_MESSAGE" value="execute batch every 100,000 steps" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2756" y="445" width="308" height="223" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575105473919">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2756" y="445" width="308" height="223" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575105473919" />
+    <state x="2693" y="300" width="424" height="520" key="FileChooserDialogImpl" timestamp="1575105737722">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2693" y="300" width="424" height="520" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575105737722" />
+    <state x="2536" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1575105444763">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2536" y="367" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575105444763" />
+    <state x="2683" y="473" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575114585945">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2683" y="473" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575114585945" />
+    <state x="2224" y="155" width="1372" height="803" key="new project wizard" timestamp="1575105739690">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2224" y="155" width="1372" height="803" key="new project wizard/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575105739690" />
   </component>
 </project>
