@@ -7,9 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DBReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574765031813</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Ausgangspunkt - PA9">
+      <created>1575306890350</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1575306890350</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,17 +320,26 @@
     <MESSAGE value="Kommentare" />
     <MESSAGE value="Remote-Connection Zugang" />
     <MESSAGE value="execute batch every 100,000 steps" />
-    <option name="LAST_COMMIT_MESSAGE" value="execute batch every 100,000 steps" />
+    <MESSAGE value="Ausgangspunkt - PA9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ausgangspunkt - PA9" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2756" y="445" width="308" height="223" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575105473919">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2756" y="445" width="308" height="223" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575105473919" />
+    <state x="2480" y="150" width="860" height="814" key="CommitChangelistDialog2" timestamp="1575306890201">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2480" y="150" width="860" height="814" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575306890201" />
     <state x="2693" y="300" width="424" height="520" key="FileChooserDialogImpl" timestamp="1575105737722">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2693" y="300" width="424" height="520" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575105737722" />
+    <state x="2510" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1575306898376">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2510" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575306898376" />
     <state x="2536" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1575105444763">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
