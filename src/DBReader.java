@@ -13,7 +13,7 @@ public class DBReader {
     DBReader(String databaseURL, String username, String password) throws SQLException{
         conn = getConnection(databaseURL,username,password);
         conn.setAutoCommit(false);
-        conn.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
+        conn.setTransactionIsolation(Connection.TRANSACTION_READ_COMMITTED);
     }
 
     public int kontostandTransaktion(int accid) throws SQLException {
@@ -67,6 +67,10 @@ public class DBReader {
         results.next();
 
         return results.getInt(1);
+    }
+
+    public void closeConnection() throws SQLException{
+        conn.close();
     }
 
 }
