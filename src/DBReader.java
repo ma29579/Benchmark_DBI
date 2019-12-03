@@ -59,14 +59,6 @@ public class DBReader {
         return balance;
     }
 
-    public void clearHistory() throws SQLException{
-
-        stmt = conn.prepareStatement("DELETE FROM tps100.history");
-        stmt.executeUpdate();
-
-        conn.commit();
-    }
-
     public int analyseTransaktion(int delta) throws SQLException {
 
         stmt = conn.prepareStatement("SELECT COUNT(*) FROM tps100.history WHERE delta = " + delta);

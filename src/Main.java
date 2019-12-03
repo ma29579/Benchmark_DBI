@@ -60,7 +60,6 @@ public class Main {
     }
 
     public static void run(DBReader reader) throws SQLException {
-        reader.clearHistory();
 
         long startTime = System.currentTimeMillis();
         int count = 0;
