@@ -6,10 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DBReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,6 +127,7 @@
       <workItem from="1575114572130" duration="2219000" />
       <workItem from="1575137279724" duration="14000" />
       <workItem from="1575138322675" duration="628000" />
+      <workItem from="1575314826971" duration="20000" />
     </task>
     <task id="LOCAL-00001" summary="added workspace.xml to gitignore">
       <created>1573552669090</created>
@@ -340,9 +338,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2510" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575306898376" />
-    <state x="2536" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1575105444763">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="616" y="353" key="com.intellij.ide.util.TipDialog" timestamp="1575314828171">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="616" y="353" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1575314828171" />
     <state x="2536" y="367" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575105444763" />
     <state x="2683" y="473" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575114585945">
       <screen x="1920" y="0" width="1920" height="1080" />

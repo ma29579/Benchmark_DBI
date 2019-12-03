@@ -21,9 +21,9 @@ public class Main {
 
 
         if (connection == 1) {
-            databaseURL = "jdbc:postgresql://192.168.51.132:5432/dbi?rewriteBatchedStatements=true";
+            databaseURL = "jdbc:postgresql://localhost:5432/DBI?rewriteBatchedStatements=true";
             username = "postgres";
-            password = "dbi";
+            password = "postgres";
         } else if (connection == 2) {
             databaseURL = "jdbc:postgresql://localhost:5433/postgres?rewriteBatchedStatements=true";
             username = "jen";
