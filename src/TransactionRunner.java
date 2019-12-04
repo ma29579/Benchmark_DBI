@@ -1,5 +1,3 @@
-import org.postgresql.ds.PGConnectionPoolDataSource;
-import org.postgresql.ds.PGPoolingDataSource;
 
 import java.sql.SQLException;
 import java.util.concurrent.ThreadLocalRandom;
@@ -9,7 +7,12 @@ public class TransactionRunner extends Thread {
     public void run(){
 
         try{
+            // Maximilian
             DBReader reader = new DBReader("jdbc:postgresql://localhost:5432/DBI?rewriteBatchedStatements=true","postgres","postgres");
+            // Joshua
+            //DBReader reader = new DBReader("jdbc:postgresql://localhost:5433/postgres?rewriteBatchedStatements=true","jen","");
+            // VM
+            //DBReader reader = new DBReader("jdbc:postgresql://192.168.122.38:5432/DBI?rewriteBatchedStatements=true","postgres","dbidbi");
             createTransactions(reader);
             reader.closeConnection();
         }
