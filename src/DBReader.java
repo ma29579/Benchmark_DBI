@@ -10,66 +10,68 @@ public class DBReader {
 
 
     //Konstruktor
-    DBReader(String databaseURL, String username, String password) throws SQLException{
-        conn = getConnection(databaseURL,username,password);
-        conn.setAutoCommit(false);
+    DBReader(String databaseURL, String username, String password) throws SQLException {
+        conn = getConnection(databaseURL, username, password);
+        conn.setAutoCommit(true);
         conn.setTransactionIsolation(Connection.TRANSACTION_READ_COMMITTED);
     }
 
     public int kontostandTransaktion(int accid) throws SQLException {
 
-        stmt = conn.prepareStatement("SELECT balance FROM tps100.accounts WHERE accid = " + accid);
-        results = stmt.executeQuery();
-        results.next();
+        int balance;
 
-        return results.getInt(1);
-    }
-
-    public int einzahlungsTransaktion(int accid,int tellerid, int branchid, int delta) throws SQLException {
-
-        int balance = 0;
-
-        String updateBranches = "UPDATE tps100.branches SET balance = balance + " + delta  + "WHERE branchid = " + branchid + ";";
-        String updateTellers = "UPDATE tps100.tellers SET balance = balance + " + delta  + "WHERE tellerid = " + tellerid + ";";
-        String updateAccounts = "UPDATE tps100.accounts SET balance = balance + " + delta  + "WHERE accid = " + accid + ";";
-
-        String selectBalance = "SELECT balance FROM tps100.accounts WHERE accid = " + accid;
-
-        String insertIntoHistory = "INSERT INTO tps100.history(accid,tellerid,delta,branchid,accbalance,cmmnt) " +
-                "VALUES (" + accid + "," + tellerid + "," + delta + "," + branchid + ", ?" +
-                ",'012345678901234567890123456789');";
-
-        stmt = conn.prepareStatement(updateBranches + updateTellers + updateAccounts);
-        stmt.executeUpdate();
-        stmt.close();
-
-        stmt = conn.prepareStatement(selectBalance);
+        stmt = conn.prepareStatement("SELECT tps100.kontostandtransaktion(?);");
+        stmt.setInt(1, accid);
         results = stmt.executeQuery();
         results.next();
         balance = results.getInt(1);
+
+        results.close();
         stmt.close();
 
-        stmt = conn.prepareStatement(insertIntoHistory);
-        stmt.setInt(1,balance);
-        stmt.executeUpdate();
-        stmt.close();
+        return balance;
+    }
 
-        conn.commit();
+    public int einzahlungsTransaktion(int accid, int tellerid, int branchid, int delta) throws SQLException {
+
+        int balance;
+
+        String callFunction = "SELECT tps100.einzahlungstransaktion(?,?,?,?);";
+
+        stmt = conn.prepareStatement(callFunction);
+        stmt.setInt(1, accid);
+        stmt.setInt(2, tellerid);
+        stmt.setInt(3, branchid);
+        stmt.setInt(4, delta);
+        results = stmt.executeQuery();
+
+        results.next();
+        balance = results.getInt(1);
+
+        stmt.close();
+        results.close();
 
         return balance;
     }
 
     public int analyseTransaktion(int delta) throws SQLException {
 
-        stmt = conn.prepareStatement("SELECT COUNT(*) FROM tps100.history WHERE delta = " + delta);
+        int historyNumber;
+
+        stmt = conn.prepareStatement("SELECT tps100.analysetransaktion(?);");
+        stmt.setInt(1, delta);
         results = stmt.executeQuery();
 
         results.next();
+        historyNumber = results.getInt(1);
 
-        return results.getInt(1);
+        results.close();
+        stmt.close();
+
+        return historyNumber;
     }
 
-    public void closeConnection() throws SQLException{
+    public void closeConnection() throws SQLException {
         conn.close();
     }
 
