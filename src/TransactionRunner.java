@@ -8,9 +8,9 @@ public class TransactionRunner extends Thread {
 
         try{
             // Maximilian
-            DBReader reader = new DBReader("jdbc:postgresql://localhost:5432/DBI?rewriteBatchedStatements=true","postgres","postgres");
+//            DBReader reader = new DBReader("jdbc:postgresql://localhost:5432/DBI?rewriteBatchedStatements=true","postgres","postgres");
             // Joshua
-            //DBReader reader = new DBReader("jdbc:postgresql://localhost:5433/postgres?rewriteBatchedStatements=true","jen","");
+            DBReader reader = new DBReader("jdbc:postgresql://localhost:5434/postgres?rewriteBatchedStatements=true","jen","");
             // VM
             //DBReader reader = new DBReader("jdbc:postgresql://192.168.122.38:5432/DBI?rewriteBatchedStatements=true","postgres","dbidbi");
             createTransactions(reader);
@@ -28,12 +28,12 @@ public class TransactionRunner extends Thread {
         int count = 0;
 
         // Einschwingphase
-        while (System.currentTimeMillis() - startTime < 240000) {
+        while (System.currentTimeMillis() - startTime < 2400) {
             execute(reader);
         }
 
         // Messphase
-        while (System.currentTimeMillis() - startTime < 540000) {
+        while (System.currentTimeMillis() - startTime < 5400) {
             execute(reader);
             count++;
         }
@@ -41,7 +41,7 @@ public class TransactionRunner extends Thread {
         System.out.println("count = " + count);
 
         // Ausschwingphase
-        while (System.currentTimeMillis() - startTime < 600000) {
+        while (System.currentTimeMillis() - startTime < 6000) {
             execute(reader);
         }
     }
