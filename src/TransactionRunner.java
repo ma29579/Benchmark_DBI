@@ -28,12 +28,12 @@ public class TransactionRunner extends Thread {
         int count = 0;
 
         // Einschwingphase
-        while (System.currentTimeMillis() - startTime < 2400) {
+        while (System.currentTimeMillis() - startTime < 240000) {
             execute(reader);
         }
 
         // Messphase
-        while (System.currentTimeMillis() - startTime < 5400) {
+        while (System.currentTimeMillis() - startTime < 540000) {
             execute(reader);
             count++;
         }
@@ -41,7 +41,7 @@ public class TransactionRunner extends Thread {
         System.out.println("count = " + count);
 
         // Ausschwingphase
-        while (System.currentTimeMillis() - startTime < 6000) {
+        while (System.currentTimeMillis() - startTime < 600000) {
             execute(reader);
         }
     }

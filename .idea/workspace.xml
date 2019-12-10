@@ -409,10 +409,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2756" y="445" width="308" height="223" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575105473919" />
-    <state x="76" y="0" width="1422" height="824" key="CommitChangelistDialog2" timestamp="1575473819146">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="61" y="0" width="1422" height="824" key="CommitChangelistDialog2" timestamp="1575967810318">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="61" y="0" width="1422" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1575369032643" />
+    <state x="61" y="0" width="1422" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1575967810318" />
     <state x="76" y="0" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575473819146" />
     <state x="2480" y="144" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1575355173121" />
     <state x="2480" y="150" width="860" height="814" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575306890201" />
@@ -487,10 +487,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1575967253439" />
-    <state x="590" y="278" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1575473822712">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="472" y="220" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1575967790371">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="472" y="220" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1575369035204" />
+    <state x="472" y="220" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1575967790371" />
     <state x="590" y="278" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575473822712" />
     <state x="2510" y="278" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1575355177061" />
     <state x="2510" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575306898376" />
