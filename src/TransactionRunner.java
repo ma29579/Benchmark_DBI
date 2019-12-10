@@ -8,11 +8,11 @@ public class TransactionRunner extends Thread {
 
         try{
             // Maximilian
-//            DBReader reader = new DBReader("jdbc:postgresql://localhost:5432/DBI?rewriteBatchedStatements=true","postgres","postgres");
+            //DBReader reader = new DBReader("jdbc:postgresql://localhost:5432/DBI?rewriteBatchedStatements=true","postgres","postgres");
             // Joshua
-            DBReader reader = new DBReader("jdbc:postgresql://localhost:5434/postgres?rewriteBatchedStatements=true","jen","");
+            //DBReader reader = new DBReader("jdbc:postgresql://localhost:5434/postgres?rewriteBatchedStatements=true","jen","");
             // VM
-            //DBReader reader = new DBReader("jdbc:postgresql://192.168.122.38:5432/DBI?rewriteBatchedStatements=true","postgres","dbidbi");
+            DBReader reader = new DBReader("jdbc:postgresql://192.168.122.38:5432/DBI","postgres","dbidbi");
             createTransactions(reader);
             reader.closeConnection();
         }

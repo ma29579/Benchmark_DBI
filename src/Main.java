@@ -1,7 +1,3 @@
-import java.sql.SQLException;
-import java.util.Scanner;
-import java.util.concurrent.ThreadLocalRandom;
-
 public class Main {
 
     public static void main(String[] args) {
