@@ -1,4 +1,6 @@
 
+import org.postgresql.util.PSQLException;
+
 import java.sql.SQLException;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -8,11 +10,11 @@ public class TransactionRunner extends Thread {
 
         try{
             // Maximilian
-            //DBReader reader = new DBReader("jdbc:postgresql://localhost:5432/DBI?rewriteBatchedStatements=true","postgres","postgres");
+            DBReader reader = new DBReader("jdbc:postgresql://localhost:5432/DBI?rewriteBatchedStatements=true","postgres","postgres");
             // Joshua
             //DBReader reader = new DBReader("jdbc:postgresql://localhost:5434/postgres?rewriteBatchedStatements=true","jen","");
             // VM
-            DBReader reader = new DBReader("jdbc:postgresql://192.168.122.38:5432/DBI","postgres","dbidbi");
+            //DBReader reader = new DBReader("jdbc:postgresql://192.168.122.38:5432/DBI","postgres","dbidbi");
             createTransactions(reader);
             reader.closeConnection();
         }
@@ -49,22 +51,27 @@ public class TransactionRunner extends Thread {
     private static void execute(DBReader reader) throws SQLException {
 
         int chosenMethod = ThreadLocalRandom.current().nextInt(0,100);
+        int accid = ThreadLocalRandom.current().nextInt(1, 10000000);
+        int tellerid = ThreadLocalRandom.current().nextInt(1, 1000);
+        int branchid = ThreadLocalRandom.current().nextInt(1, 100);
+        int delta = ThreadLocalRandom.current().nextInt(5, 501);
 
+        while(true) {
+            try {
+                if (chosenMethod < 35) {
+                    reader.kontostandTransaktion(accid);
+                } else if (chosenMethod < 85) {
+                    reader.einzahlungsTransaktion(accid,tellerid,branchid,delta);
+                } else {
+                    reader.analyseTransaktion(delta);
+                }
+                break;
+            }
+            catch (PSQLException e){
+                //System.out.println("FEHLER!");
+            }
 
-        if(chosenMethod < 35){
-            reader.kontostandTransaktion(ThreadLocalRandom.current().nextInt(1,10000000));
         }
-        else if(chosenMethod < 85){
-            reader.einzahlungsTransaktion(
-                    ThreadLocalRandom.current().nextInt(1,10000000),    // AccountID
-                    ThreadLocalRandom.current().nextInt(1,1000),        // TellerID
-                    ThreadLocalRandom.current().nextInt(1,100),         // BranchID
-                    ThreadLocalRandom.current().nextInt(5,501));        // Delta
-        }
-        else{
-            reader.analyseTransaktion(ThreadLocalRandom.current().nextInt(5,501));
-        }
-
         try {
             Thread.sleep(50);
         } catch (InterruptedException e) {
