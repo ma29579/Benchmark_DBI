@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="" />
+    <list default="true" id="af4c5dcf-10d1-4972-b78b-5a6a1148e2ce" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +159,7 @@
       <workItem from="1575703651787" duration="21000" />
       <workItem from="1575901896836" duration="102000" />
       <workItem from="1575960087482" duration="1684000" />
-      <workItem from="1575966306991" duration="3175000" />
+      <workItem from="1575966306991" duration="3438000" />
     </task>
     <task id="LOCAL-00001" summary="added workspace.xml to gitignore">
       <created>1573552669090</created>
@@ -362,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575969785474</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Connection - Serialisiert&#10;10 Minuten">
+      <created>1575969907889</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1575969907889</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,7 +405,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added workspace.xml to gitignore" />
     <MESSAGE value="insert into tellers" />
     <MESSAGE value="set auto commit = false" />
     <MESSAGE value="added apache stopwatch" />
@@ -421,17 +429,18 @@
     <MESSAGE value="Jar-Datei zum Messen" />
     <MESSAGE value="Jar-Datei zum Messen, 10 Minuten" />
     <MESSAGE value="Connection - Serialisiert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connection - Serialisiert" />
+    <MESSAGE value="Connection - Serialisiert&#10;10 Minuten" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connection - Serialisiert&#10;10 Minuten" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2756" y="445" width="308" height="223" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575105473919">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2756" y="445" width="308" height="223" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575105473919" />
-    <state x="61" y="0" width="1422" height="824" key="CommitChangelistDialog2" timestamp="1575969784211">
+    <state x="61" y="0" width="1422" height="824" key="CommitChangelistDialog2" timestamp="1575970082496">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="61" y="0" width="1422" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1575969784211" />
+    <state x="61" y="0" width="1422" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1575970082496" />
     <state x="76" y="0" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575473819146" />
     <state x="2480" y="144" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1575355173121" />
     <state x="2480" y="150" width="860" height="814" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575306890201" />
@@ -506,10 +515,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1575967253439" />
-    <state x="472" y="220" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1575969788523">
+    <state x="472" y="220" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1575969915355">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="472" y="220" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1575969788523" />
+    <state x="472" y="220" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1575969915355" />
     <state x="590" y="278" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575473822712" />
     <state x="2510" y="278" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1575355177061" />
     <state x="2510" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575306898376" />
