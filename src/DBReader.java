@@ -16,13 +16,24 @@ public class DBReader {
         conn.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
     }
 
+    /**
+     * Simuliert die Abfrage des Kontostands eines Kunden
+     * @param accid entspricht der Kontonummer des besagten Kunden
+     * @return gibt den entsprechenden Kontostand zurück
+     * @throws SQLException
+     */
     public int kontostandTransaktion(int accid) throws SQLException {
 
         int balance;
 
+        // Initialisierung des PreparedStatements
         stmt = conn.prepareStatement("SELECT accounts.balance FROM tps100.accounts WHERE accounts.accid = ?;");
+        // Einfügen der erhaltenen 'accid' in das PreparedStatement
         stmt.setInt(1, accid);
+        // Ausführung des PreparedStatements
         results = stmt.executeQuery();
+
+        // Auslesen des ermittelten Wertes für das Attribut 'balance'
         results.next();
         balance = results.getInt(1);
 
@@ -32,6 +43,15 @@ public class DBReader {
         return balance;
     }
 
+    /**
+     * Simuliert die Einzahlung eines Geldbetrags und führt dementsprechende Operationen durch
+     * @param accid identifiziert den gewünschten Tupel innerhalb der Relation 'Accounts'
+     * @param tellerid identifiziert den gewünschten Tupel innerhalb der Relation 'Tellers'
+     * @param branchid identifiziert den gewünschten Tupel innerhalb der Relation 'Branches'
+     * @param delta repräsentiert den Einzahlungsbetrag
+     * @return der veränderte Kontostand wird zurückgegeben
+     * @throws SQLException
+     */
     public int einzahlungsTransaktion(int accid, int tellerid, int branchid, int delta) throws SQLException {
 
         int balance;
@@ -55,6 +75,12 @@ public class DBReader {
         return balance;
     }
 
+    /**
+     * Ermittelt die Anzahl von Tupeln, dessen Attribut 'delta' den Wert des Parameters delta besitzt
+     * @param delta entspricht dem Einzahlungsbetrag, der für die Suche in der Relation verwendet wird
+     * @return gibt die Anzahl der gefundenen Tupel zurück
+     * @throws SQLException
+     */
     public int analyseTransaktion(int delta) throws SQLException {
 
         int historyNumber;
@@ -72,6 +98,10 @@ public class DBReader {
         return historyNumber;
     }
 
+    /**
+     * Schließt die aufgebaute Verbindung zu dem Datenbankserver
+     * @throws SQLException
+     */
     public void closeConnection() throws SQLException {
         conn.close();
     }

@@ -4,8 +4,10 @@ public class Main {
 
         try {
 
+            // Erzeugung der einzelnen Threads
             for (int i = 0; i < 5; i++) {
                 TransactionRunner t = new TransactionRunner();
+                // Durch den Aufruf der Methode Start, wird die in TransactionRunner implementierte Methode 'run' aufgerufen
                 t.start();
             }
 
