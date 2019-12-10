@@ -68,7 +68,7 @@ public class TransactionRunner extends Thread {
                 break;
             }
             catch (PSQLException e){
-                //System.out.println("FEHLER!");
+
             }
 
         }

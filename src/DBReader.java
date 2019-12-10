@@ -20,7 +20,7 @@ public class DBReader {
 
         int balance;
 
-        stmt = conn.prepareStatement("SELECT tps100.kontostandtransaktion(?);");
+        stmt = conn.prepareStatement("SELECT accounts.balance FROM tps100.accounts WHERE accounts.accid = ?;");
         stmt.setInt(1, accid);
         results = stmt.executeQuery();
         results.next();
@@ -36,13 +36,14 @@ public class DBReader {
 
         int balance;
 
-        String callFunction = "SELECT tps100.einzahlungstransaktion(?,?,?,?);";
+        String callFunction = "SELECT tps100.einzahlungstransaktion(?,?,?,?,?);";
 
         stmt = conn.prepareStatement(callFunction);
         stmt.setInt(1, accid);
         stmt.setInt(2, tellerid);
         stmt.setInt(3, branchid);
         stmt.setInt(4, delta);
+        stmt.setString(5,"012345678901234567890123456789");
         results = stmt.executeQuery();
 
         results.next();
@@ -58,7 +59,7 @@ public class DBReader {
 
         int historyNumber;
 
-        stmt = conn.prepareStatement("SELECT tps100.analysetransaktion(?);");
+        stmt = conn.prepareStatement("SELECT COUNT(*) FROM tps100.history WHERE delta = ?;");
         stmt.setInt(1, delta);
         results = stmt.executeQuery();
 
