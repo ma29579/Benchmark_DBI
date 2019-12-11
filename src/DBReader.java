@@ -12,7 +12,7 @@ public class DBReader {
     //Konstruktor
     DBReader(String databaseURL, String username, String password) throws SQLException {
         conn = getConnection(databaseURL, username, password);
-        conn.setAutoCommit(true);
+        conn.setAutoCommit(false);
         conn.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
     }
 
@@ -39,6 +39,8 @@ public class DBReader {
 
         results.close();
         stmt.close();
+
+        conn.commit();
 
         return balance;
     }
@@ -72,6 +74,8 @@ public class DBReader {
         stmt.close();
         results.close();
 
+        conn.commit();
+
         return balance;
     }
 
@@ -95,6 +99,8 @@ public class DBReader {
         results.close();
         stmt.close();
 
+        conn.commit();
+
         return historyNumber;
     }
 
@@ -104,6 +110,10 @@ public class DBReader {
      */
     public void closeConnection() throws SQLException {
         conn.close();
+    }
+
+    public void rollbackTransaction() throws SQLException{
+        conn.rollback();
     }
 
 }
