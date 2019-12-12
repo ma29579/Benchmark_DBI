@@ -9,6 +9,7 @@ public class TransactionRunner extends Thread {
      * Überschreibt die in der Klasse Thread implementierte Methode 'run'
      * Instanziiert ein Objekt der Klasse DBReader, beginnt die Transaktionsmessung und schließt daraufhin die benötigte Datenbankverbindung
      */
+    @Override
     public void run(){
 
         try{
@@ -29,7 +30,7 @@ public class TransactionRunner extends Thread {
     /**
      * Wird für die Einhaltung des zeitlichen Rahmens und der Messung der durchgeführten Transaktionen benötigt
      * @param reader erwartet ein Objekt der Klasse DBReader, um den Aufruf der Methode execute durchzuführen
-     * @throws SQLException
+     * @throws SQLException Wenn keine Verbindung zur Datenbank aufgebaut werden kann
      */
     private static void createTransactions(DBReader reader) throws SQLException {
 
@@ -58,7 +59,7 @@ public class TransactionRunner extends Thread {
     /**
      * Ausführung einer der in DBReader formulierten Transaktion mit dafür ermittelten Parametern
      * @param reader erwartet ein Objekt der Klasse DBReader, um die benötigten Methoden auszuführen
-     * @throws SQLException
+     * @throws SQLException Wenn keine Verbindung zur Datenbank aufgebaut werden kann
      */
     private static void execute(DBReader reader) throws SQLException {
 

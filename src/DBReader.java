@@ -20,7 +20,7 @@ public class DBReader {
      * Simuliert die Abfrage des Kontostands eines Kunden
      * @param accid entspricht der Kontonummer des besagten Kunden
      * @return gibt den entsprechenden Kontostand zurück
-     * @throws SQLException
+     * @throws SQLException wenn es im SQL-Statement einen Syntaxfehler gibt
      */
     public int kontostandTransaktion(int accid) throws SQLException {
 
@@ -52,7 +52,7 @@ public class DBReader {
      * @param branchid identifiziert den gewünschten Tupel innerhalb der Relation 'Branches'
      * @param delta repräsentiert den Einzahlungsbetrag
      * @return der veränderte Kontostand wird zurückgegeben
-     * @throws SQLException
+     * @throws SQLException wenn es im SQL-Statement einen Syntaxfehler gibt
      */
     public int einzahlungsTransaktion(int accid, int tellerid, int branchid, int delta) throws SQLException {
 
@@ -83,7 +83,7 @@ public class DBReader {
      * Ermittelt die Anzahl von Tupeln, dessen Attribut 'delta' den Wert des Parameters delta besitzt
      * @param delta entspricht dem Einzahlungsbetrag, der für die Suche in der Relation verwendet wird
      * @return gibt die Anzahl der gefundenen Tupel zurück
-     * @throws SQLException
+     * @throws SQLException wenn es im SQL-Statement einen Syntaxfehler gibt
      */
     public int analyseTransaktion(int delta) throws SQLException {
 
@@ -106,12 +106,16 @@ public class DBReader {
 
     /**
      * Schließt die aufgebaute Verbindung zu dem Datenbankserver
-     * @throws SQLException
+     * @throws SQLException wenn die Verbindung zur Datenbank bereits geschlossen wurde
      */
     public void closeConnection() throws SQLException {
         conn.close();
     }
 
+    /**
+     * Führt einen Rollback der Transaktion durch
+     * @throws SQLException wenn noch keine Transaktion durchgeführt wurde
+     */
     public void rollbackTransaction() throws SQLException{
         conn.rollback();
     }
